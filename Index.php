@@ -11,7 +11,7 @@
 <div class="sform">
 <form action="action.php" method="POST">
 <div class="ctext">
-<input type="text" name="tdate" placeholder="Eg: 25-Jun-2020" required>
+<input type="text" name="tdate" placeholder="Eg: 25-06-2020" required>
 </div>
 <button type="submit" class="btn" name="send">Send Mails</button>
 </form>
