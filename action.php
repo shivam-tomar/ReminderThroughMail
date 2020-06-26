@@ -28,7 +28,7 @@ if(!empty($tdate))
 				$email->setSubject("Reminder for your Loan Emi");
 				$email->addTo("$row[0]", "Customer");
 				$email->addContent("text/plain", "Dear customer $row[1] Please pay your loan Emi of $row[2] INR, Due date: $row[3]");
-				$sendgrid = new \SendGrid(getenv('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'));
+				$sendgrid = new \SendGrid(getenv('Key_Generated_By_Sendgrid'));
 				try {
 					$response = $sendgrid->send($email);
 					echo "Mail Sent to $row[1]";
